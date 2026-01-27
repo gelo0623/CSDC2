@@ -1,0 +1,18 @@
+1. Index of the first and last elements
+ In the array, the index  of the first element is 0, everything always starts with 0 in c++. This means the count should and will Always start with 0 as 1. Since the array contains 10 elements, the content or the array index size would be 9 since it start with 0. The last element is at index 9 because the index is always one less than the total number of elements in the array.
+
+2. Accessing arr[10]
+ If arr[10] is inputed, it will result in undefined behavior because this index is outside the valid range of the array and is able to give out 0 or an error. The array only has indices from 0 to 9, so index 10 refers to a memory location that does not belong to the array, an example of this is a random number being given. Since c++ doesnt automaticaly checks the program, it may result to crashing, return an incorrect value or access memory used by another variable. 
+
+3. How the array is stored in memory and how the 5th element is found
+
+The array is stored in contiguous memory locations, which means that all elements are placed next to each other in memory. The computer keeps track of the base address of the first element of the array. To find any other element, the computer uses the index and the size of the data type to calculate the correct memory address. For example, to find the 5th element (which has index 4), the computer multiplies the index by the size of an integer and adds this to the base address. This allows the computer to directly and efficiently access any element in the array.
+
+4. Difference between a primitive variable and an array of primitives
+ The array exists as a single block of memory because its elements occupy adjacent memory locations. The computer maintains the base address information which points to the array's first element. The system calculates the memory address of other elements by using their index value together with their data type size. The computer locates the 5th element by multiplying his index value of 4 with integer size then adding the result to the base address. Through this method, the computer can access any element in the array with complete efficiency.
+
+5. Conceptual steps to insert a new element at index 3
+ To insert a new element at index 3, several conceptual steps must take place because arrays have a fixed size. First, there must be available space in the array or a larger array must be used. The process requires shifting all elements from index three onward because the new element needs space in the array. After the shift, the new value can be placed in the index 3. The size of the array needs to be changed because of the new added element. This guarantees  that all current information stays intact without any risk of being lost.
+
+6. Optional challenge: Finding days with temperatures above the average
+ If the array represents daily temperatures,  a possible logical procedure to find all days with temperatures above the average would be involving two main passes through the data. The average temperature requires the calculation of thetotal temperature values through summing it up and by dividing it with total daily temperature records. The list would undergo a second examination in which each day's temperature would be tested against the calculated average. The process will identify all days that have temperatures exceeding the average temperature limit. The method provides a complete system to identify all days that exceed the established average temperature which it handles through an organized process.
