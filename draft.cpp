@@ -105,7 +105,7 @@ int main () {
     
     
     
-    addAcccount("1234567890123456", "encodedPIN: 1234", 10000, "BDO", "Local");
+    addAccount("1234567890123456", "encodedPIN: 1234", 10000, "BDO", "Local");
     logTransaction("Deposit", 5000, 0);
     
     
@@ -129,7 +129,7 @@ int login() {
 void clientMenu () {
     
     
-    return 0;
+    
 }
 
 
@@ -139,7 +139,7 @@ void clientMenu () {
 void adminMenu () {
     
     
-    return 0;
+
 }
 
 
