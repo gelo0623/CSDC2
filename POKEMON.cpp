@@ -82,28 +82,7 @@ int main() {
         
     }
     
-	Character snorlax;
-	cout << "====================================" << endl;
-	cout << "==         YOUR POKEMON           ==" << endl;
-	cout << "====================================" << endl;
-	
-	snorlax.name       = "Snorlax";
-	snorlax.type       = "Normal";
-	snorlax.level      = 50;
-	snorlax.attack     =  146;
-	snorlax.hp         = 251;
-	snorlax.speed      = 66;
-
-	cout << "Pokemon: " << snorlax.name << endl;
-	cout << "Type:      " << snorlax.type << endl;
-	cout << "Level:     " << snorlax.level << endl;
-	cout << "Attack:    " << snorlax.attack << endl;
-	cout << "HP:        " << snorlax.hp << endl;
-	cout << "Speed:     " << snorlax.speed << endl;
-
-cout << "\n";
-
-	Enemy squirtle;
+Enemy squirtle;
 	cout << "====================================" << endl;
 	cout << "==           YOUR ENEMY           ==" << endl;
 	cout << "====================================" << endl;
@@ -123,6 +102,28 @@ cout << "\n";
 	cout << "HP:        " << squirtle.hp << endl;
 	cout << "Speed:     " << squirtle.speed << endl;
 	cout << "Status:    " << (squirtle.isDefeated ? "Alive" : "Fainted") << endl;
+
+cout << "\n";
+
+	
+	Character snorlax;
+	cout << "====================================" << endl;
+	cout << "==         YOUR POKEMON           ==" << endl;
+	cout << "====================================" << endl;
+	
+	snorlax.name       = "Snorlax";
+	snorlax.type       = "Normal";
+	snorlax.level      = 50;
+	snorlax.attack     =  146;
+	snorlax.hp         = 251;
+	snorlax.speed      = 66;
+
+	cout << "Pokemon: " << snorlax.name << endl;
+	cout << "Type:      " << snorlax.type << endl;
+	cout << "Level:     " << snorlax.level << endl;
+	cout << "Attack:    " << snorlax.attack << endl;
+	cout << "HP:        " << snorlax.hp << endl;
+	cout << "Speed:     " << snorlax.speed << endl;
 
 
 cout << "\n";
