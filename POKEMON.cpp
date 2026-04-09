@@ -138,7 +138,7 @@ Enemy squirtle;
 
 cout << "\n";
 
-	
+	while (true){
 	Character snorlax;
 	cout << "====================================" << endl;
 	cout << "==         YOUR POKEMON           ==" << endl;
@@ -237,7 +237,7 @@ if (choice == 1){
 	}
 	
 	
-	if (choice == 3){
+	if (choice1 == 3){
 	attack2.name       = "Hyper Beam";
 	attack2.type       = "Normal";
 	attack2.category      = "Physical";
@@ -258,7 +258,7 @@ if (choice == 1){
 	
 	
 	
-	if (choice == 4){
+	if (choice1 == 4){
 	attack3.name       = "Earthquake";
 	attack3.type       = "Normal";
 	attack3.category      = "Physical";
@@ -296,8 +296,9 @@ if (choice == 3){
 if (choice == 4){
     cout << "You have ran away safely.\n";
     cin.get(); cin.get();
-    
     break;
+    
+}
 }
 
 
