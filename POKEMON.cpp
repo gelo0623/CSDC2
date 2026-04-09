@@ -36,6 +36,36 @@ struct BodySlam {
     bool isContact;
 };
 
+struct GigaImpact {
+    string name; 
+    string type;
+    string category;   
+    int power;
+    int accuracy;
+    int pp;
+    bool isContact;
+};
+
+struct HyperBeam {
+    string name; 
+    string type;
+    string category;   
+    int power;
+    int accuracy;
+    int pp;
+    bool isContact;
+};
+
+struct Earthquake {
+    string name; 
+    string type;
+    string category;   
+    int power;
+    int accuracy;
+    int pp;
+    bool isContact;
+};
+
 
 
 
@@ -47,6 +77,8 @@ int main() {
     int x = 5, y = 1;
     
     char move;
+    
+    int choice;
     
     while(true) {
         system("clear");
@@ -79,8 +111,9 @@ int main() {
     cin.get();
     break; 
 }
+}
         
-    }
+    
     
 Enemy squirtle;
 	cout << "====================================" << endl;
@@ -128,13 +161,44 @@ cout << "\n";
 
 cout << "\n";
 
+cout << "What will " << snorlax.name << " do?" << endl;
+cout << "[1] FIGHT   [2] BAG  \n[3]POKEMON  [4] RUN\n";
+cout << "Enter Choice: ";
+cin >> choice;
+
+
+
+
+if (choice == 1){
+    
+    int choice1;
+    
 
 
 	BodySlam attack;
-	cout << "====================================" << endl;
-	cout << "==          YOUR ATTACK           ==" << endl;
-	cout << "====================================" << endl;
+	GigaImpact attack1;
+	HyperBeam attack2;
+	Earthquake attack3;
 	
+	attack.pp = 15;
+	attack1.pp = 15;
+	attack2.pp = 15;
+	attack3.pp = 15;
+	
+	
+	
+	cout << "====================================" << endl;
+	cout << "==          YOUR ATTACKS           ==" << endl;
+	cout << "====================================" << endl;
+	cout << "[1] BODY SLAM" << " (PP: " << attack.pp << ")" << endl;
+	cout << "[2] GIGA IMPACT" << " (PP: " << attack1.pp << ")" << endl;
+	cout << "[3] HYPER BEAM" << " (PP: " << attack2.pp << ")" << endl;
+	cout << "[4] EARTHQUAKE" << " (PP: " << attack3.pp << ")" << endl;
+	cout << "Enter move: ";
+	cin >>choice1;
+	
+	
+	if (choice1 == 1){
 	attack.name       = "Body Slam";
 	attack.type       = "Normal";
 	attack.category      = "Physical";
@@ -142,13 +206,101 @@ cout << "\n";
 	attack.accuracy         = 100;
 	attack.pp    = 15;
 	attack.isContact      = true;
-
+	
 	cout << "Attack:    " << attack.name << endl;
+	cout << "PP:        " << attack.pp << endl;
 	cout << "Type:      " << attack.type << endl;
 	cout << "Category:  " << attack.category << endl;
 	cout << "Power:     " << attack.power << endl;
 	cout << "Accuracy:  " << attack.accuracy << endl;
-	cout << "PP:        " << attack.pp << endl;
 	cout << "Status:    " << (attack.isContact ? "Hit" : "Miss") << endl;
+	
+	}
+	
+	if (choice1 == 2){
+	attack1.name       = "Giga Impact";
+	attack1.type       = "Normal";
+	attack1.category      = "Physical";
+	attack1.power     =  85;
+	attack1.accuracy         = 100;
+	attack1.pp    = 15;
+	attack1.isContact      = true;
+	
+	cout << "Attack:    " << attack1.name << endl;
+	cout << "PP:        " << attack1.pp << endl;
+	cout << "Type:      " << attack1.type << endl;
+	cout << "Category:  " << attack1.category << endl;
+	cout << "Power:     " << attack1.power << endl;
+	cout << "Accuracy:  " << attack1.accuracy << endl;
+	cout << "Status:    " << (attack1.isContact ? "Hit" : "Miss") << endl;
+	
+	}
+	
+	
+	if (choice == 3){
+	attack2.name       = "Hyper Beam";
+	attack2.type       = "Normal";
+	attack2.category      = "Physical";
+	attack2.power     =  85;
+	attack2.accuracy         = 100;
+	attack2.pp    = 15;
+	attack2.isContact      = true;
+	
+	cout << "Attack:    " << attack2.name << endl;
+	cout << "PP:        " << attack2.pp << endl;
+	cout << "Type:      " << attack2.type << endl;
+	cout << "Category:  " << attack2.category << endl;
+	cout << "Power:     " << attack2.power << endl;
+	cout << "Accuracy:  " << attack2.accuracy << endl;
+	cout << "Status:    " << (attack2.isContact ? "Hit" : "Miss") << endl;
+	
+	}
+	
+	
+	
+	if (choice == 4){
+	attack3.name       = "Earthquake";
+	attack3.type       = "Normal";
+	attack3.category      = "Physical";
+	attack3.power     =  85;
+	attack3.accuracy         = 100;
+	attack3.pp    = 15;
+	attack3.isContact      = true;
+	
+	cout << "Attack:    " << attack3.name << endl;
+	cout << "PP:        " << attack3.pp << endl;
+	cout << "Type:      " << attack3.type << endl;
+	cout << "Category:  " << attack3.category << endl;
+	cout << "Power:     " << attack3.power << endl;
+	cout << "Accuracy:  " << attack3.accuracy << endl;
+	cout << "Status:    " << (attack3.isContact ? "Hit" : "Miss") << endl;
+	
+	}
+	
+
+
+
+
+}
+
+if (choice == 2){
+    
+    
+}
+
+if (choice == 3){
+    
+    
+}
+
+if (choice == 4){
+    cout << "You have ran away safely.\n";
+    cin.get(); cin.get();
+    
+    break;
+}
+
+
+
 	return 0;
 }
