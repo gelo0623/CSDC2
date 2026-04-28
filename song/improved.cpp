@@ -273,7 +273,7 @@ private:
                  << (tSec < 10 ? "0" : "") << tSec;
                  
                  if (paused) cout << " [PAUSED]";
-                 else cout << "";
+                 else cout << " [RESUME]";
                  cout << flush;
 
             if (elapsed == total) break;
