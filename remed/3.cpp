@@ -13,7 +13,7 @@ int main() {
     cin >> l;
     
     
-    for (int i = 1; i <= n; i++){
+   for (int i = 1; i <= l; i++) {
         cout << n << " x " << i << " = " << n * i << endl;
         
     }
