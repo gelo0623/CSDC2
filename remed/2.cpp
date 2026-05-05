@@ -3,8 +3,12 @@
 
 using namespace std;
 
+
+
 int main() {
-    int a, b;
+    
+    int a;
+    int b;
     
     cout << "Enter a: ";
     cin >> a;
@@ -12,15 +16,17 @@ int main() {
     cout << "Enter b: ";
     cin >> b;
     
-    int sum = a / b;
-    int rem = a % b;
-    rem = rem % b;
-    while (b != 0);
+    while (b != 0) {
     
     
-    cout << rem;
+    int temp = b;
+    b = a % b;
+    a = temp;
     
+}
+    cout << a << endl;
     
-
     return 0;
+
+    
 }
