@@ -29,6 +29,7 @@ int main() {
         
         
         cout << "Row " << i + 1 << ": " << sum << endl;
+        sum = 0;
         
         
     }
