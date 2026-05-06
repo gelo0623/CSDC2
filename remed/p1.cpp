@@ -55,10 +55,10 @@ int main() {
 
 
 
-	cout << largest << endl;
-	cout << smallest << endl;
-	cout << average << endl;
-	cout << passcount << endl;
+	cout << "Largest: " << largest << endl;
+	cout << "Smallest: " << smallest << endl;
+	cout << "Average: " << average << endl;
+	cout << "Passed: " << passcount << endl;
 
 
 
