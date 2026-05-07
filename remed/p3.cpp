@@ -6,6 +6,8 @@ using namespace std;
 int main() {
     vector<string> list;  
     string command;
+    
+    cout << "ADD PRODUCTS (INPUT ADD first then product)" << endl;
 
     while (true) {
         cin >> command;
