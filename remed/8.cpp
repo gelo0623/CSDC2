@@ -23,7 +23,7 @@ int main () {
     int n;
     
     
-    cout << "Enter numbers to flatten: "'
+    cout << "Enter numbers to flatten: ";
     cin >> n;
     
     cout << f(n);
