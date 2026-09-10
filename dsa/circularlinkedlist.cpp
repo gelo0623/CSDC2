@@ -8,6 +8,9 @@ struct Node {
 };
 
 typedef Node* NodePtr; //Node* and nodeptr is the same thing
+// NodePtr is simply another name for Node*. This makes pointer declarations easier to read.
+
+
 
 // Insertion
 // Insert a node into a started circular linked list
@@ -16,7 +19,7 @@ void insertNode(NodePtr& Rear, int item) {//passbyref and variables
     NodePtr New, Cur, Prev;
 
     //create a new node
-    New = new Node;
+    New = new Node; // new Node creates a node in dynamic memory
     New->data = item; // storing the value to the item var
     
 
@@ -165,7 +168,21 @@ int main () {
 
 
 
+/*REMEMBER!!
 
+A linked list is a dynamic data structure made of nodes. 
+Each node stores: 
+1. Data 
+2. A pointer to the next node 
+
+Unlike an array, linked lists do not require contiguous memory.
+
+
+In a circular linked list, the last node doesnt point to NULL.
+
+Rear points to the LAST node.
+
+*/
 
 
 
