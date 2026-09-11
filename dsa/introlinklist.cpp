@@ -46,6 +46,28 @@ t->next = n; // to connect the prev to new node again;
 n->next = NULL;
 
 
+n->data = 1;
+h = n;
+
+n2->data = 2;
+n->next = n2; // to move the first node to the second node 
+
+n3->data = 3;
+n2->next = n3; // to move second node to third
+
+n3->next = NULL;
+
+//say that we want to start at the new node or the last and make it point to the firts
+n4->next = h // since n is h  
+h = n4 //make n4 the head since we start here
+
+//say youre gonna delete first node or you will not start from it or so
+node* temp = h;//save the location before moving h 
+h = h->next // no h is at b and will start at b / this just makes A not part of the sequence anymore but A is still there
+    // if we do this first we lost the only address that points to A, A is gone and unreachable and we can never call delete on it again// once you move you can never go back
+delete temp // removes temp / destroys the node completely
+
+
 
 
 
